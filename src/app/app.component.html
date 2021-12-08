@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <nav>
-        <ul id="bger">
-            <li>
-                <a href="https://ahphoo.github.io/Advent of Code/">Advent of Code</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        TBD
-    </main>
+    <head>
+        <link rel="icon" href="https://i.pinimg.com/736x/67/5f/bf/675fbf80eabf11721c93f345a156b40f.jpg">
+    </head>
+    <body>
+        <nav>
+            <ul id="bger">
+                <div *ngFor="let link of links">
+                    <li>
+                        <a [href]="link.url">{{ link.name }}</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Ever feel like this?</h2>
+                <p><img src="https://img.devrant.com/devrant/rant/r_102813_Wx1Vb.jpg" alt="alt text" title="Logo title"></p>
+                <p>I was inspired by <a href="https://raymondsheng.github.io/">Rusty Algorithms</a> (now defunct 😢) to create a website for those who need a refresher on algorithms.</p>
+            </article>
+        </main>
+    </body>
 </html>
 
 <router-outlet></router-outlet>
