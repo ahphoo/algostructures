@@ -5,9 +5,11 @@
     </head>
     <body>
         <nav>
+            <h1>ALGOSTRUCTURES</h1>
             <ul id="bger">
                 <div *ngFor="let link of links">
                     <li>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAaElEQVRIx2NgGOqAEcZgZefQb25suIBPcW19g8Hvnz8ukmwBKzuHQHNjw3tiNFRUVDCSZAExLicX1NY3ODJ2dHT8ZxgF+OKA1kHERGsfjFowasGoBaMWEGNBbX2DI60Mr61vkBr69QEAFDIY9Yz1owAAAAAASUVORK5CYII=" width="16px">
                         <a [href]="link.url">{{ link.name }}</a>
                     </li>
                 </div>
