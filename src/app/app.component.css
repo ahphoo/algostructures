@@ -1,4 +1,4 @@
-#bger, #tax_list {
+#bger, #breadcrumbs {
     display: flex;
     flex-flow: column;
     list-style: none;

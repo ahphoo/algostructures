@@ -5,6 +5,23 @@
     </head>
     <body>
         <nav>
+            <div id="subnav">
+                <form class="theme-selector">
+                  <button type="button" id="theme-light-button" class="theme-button" onclick="enableTheme('light', true)" aria-pressed="true">◪</button>
+                  <button type="button" id="theme-dark-button" class="theme-button enabled" onclick="enableTheme('dark', true)" aria-pressed="false">◩</button>
+                </form>
+                <a href="/search">⌕</a>       
+            </div>
+            <ul id="breadcrumbs">
+                <li>
+                    /
+                    <a href="/tags/">tags</a>
+                </li> 
+                <li>
+                    /
+                    <a href="/authors/">authors</a>
+                </li> 
+            </ul>
             <h1>ALGOSTRUCTURES</h1>
             <ul id="bger">
                 <div *ngFor="let link of links">
